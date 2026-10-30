@@ -1,0 +1,59 @@
+{
+  "id": 37,
+  "title": "dmz.quest.movies37.name",
+  "description": "dmz.quest.movies37.desc",
+  "type": "SAGA",
+  "category": "saga_movies",
+  "parallel_objectives": false,
+  "party_scaling": true,
+  "secret": false,
+  "claim_mode": "TREE_OR_NPC",
+  "prerequisites": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "movies_saga",
+        "questId": 36
+      }
+    ]
+  },
+  "requirements": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "DIMENSION",
+        "dimension": "dragonminez:otherworld"
+      },
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "buu_saga",
+        "questId": 34
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_super_janemba",
+      "count": 1,
+      "health": 1102500.0,
+      "meleeDamage": 46440.0,
+      "kiDamage": 42230.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "ATTRIBUTES",
+      "amount": 170
+    },
+    {
+      "type": "ITEM",
+      "item": "dragonminez:dimensional_sword",
+      "count": 1
+    }
+  ],
+  "defaultsVersion": "2.2.0"
+}

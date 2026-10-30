@@ -1,0 +1,53 @@
+{
+  "id": 1,
+  "title": "dmz.quest.saiyan1.name",
+  "description": "dmz.quest.saiyan1.desc",
+  "type": "SAGA",
+  "category": "saga_saiyan",
+  "parallel_objectives": false,
+  "party_scaling": true,
+  "secret": false,
+  "claim_mode": "TREE_OR_NPC",
+  "prerequisites": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "classic_saga",
+        "questId": 52
+      }
+    ]
+  },
+  "requirements": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "DIMENSION",
+        "dimension": "minecraft:overworld"
+      },
+      {
+        "type": "BIOME",
+        "biome": "#dragonminez:is_plains"
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_raditz",
+      "count": 1,
+      "health": 1800.0,
+      "meleeDamage": 90.0,
+      "kiDamage": 140.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "ATTRIBUTES",
+      "amount": 20
+    }
+  ],
+  "defaultsVersion": "2.2.0"
+}

@@ -1,0 +1,53 @@
+{
+  "id": 15,
+  "title": "dmz.quest.gt15.name",
+  "description": "dmz.quest.gt15.desc",
+  "type": "SAGA",
+  "category": "saga_gt",
+  "parallel_objectives": false,
+  "party_scaling": true,
+  "secret": false,
+  "claim_mode": "TREE_OR_NPC",
+  "prerequisites": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "gt_saga",
+        "questId": 14
+      }
+    ]
+  },
+  "requirements": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "DIMENSION",
+        "dimension": "minecraft:overworld"
+      },
+      {
+        "type": "BIOME",
+        "biome": "#dragonminez:is_plains"
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_uub",
+      "count": 1,
+      "health": 1050000.0,
+      "meleeDamage": 44130.0,
+      "kiDamage": 39930.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "ATTRIBUTES",
+      "amount": 170
+    }
+  ],
+  "defaultsVersion": "2.2.0"
+}

@@ -1,0 +1,59 @@
+{
+  "id": 8,
+  "title": "dmz.quest.movies8.name",
+  "description": "dmz.quest.movies8.desc",
+  "type": "SAGA",
+  "category": "saga_movies",
+  "parallel_objectives": false,
+  "party_scaling": true,
+  "secret": false,
+  "claim_mode": "TREE_OR_NPC",
+  "prerequisites": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "movies_saga",
+        "questId": 7
+      }
+    ]
+  },
+  "requirements": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "DIMENSION",
+        "dimension": "minecraft:overworld"
+      },
+      {
+        "type": "BIOME",
+        "biome": "dragonminez:rocky"
+      },
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "saiyan_saga",
+        "questId": 12
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_goku_mid_base",
+      "count": 1,
+      "health": 5400.0,
+      "meleeDamage": 290.0,
+      "kiDamage": 340.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY",
+      "canTransform": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "ATTRIBUTES",
+      "amount": 30
+    }
+  ],
+  "defaultsVersion": "2.2.0"
+}

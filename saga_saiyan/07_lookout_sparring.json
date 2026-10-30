@@ -1,0 +1,73 @@
+{
+  "id": 7,
+  "title": "dmz.quest.saiyan7.name",
+  "description": "dmz.quest.saiyan7.desc",
+  "type": "SAGA",
+  "category": "saga_saiyan",
+  "parallel_objectives": false,
+  "party_scaling": true,
+  "secret": false,
+  "claim_mode": "TREE_OR_NPC",
+  "prerequisites": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "saiyan_saga",
+        "questId": 6
+      }
+    ]
+  },
+  "requirements": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "DIMENSION",
+        "dimension": "minecraft:overworld"
+      },
+      {
+        "type": "STRUCTURE",
+        "structure": "dragonminez:kamilookout"
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_krillin",
+      "count": 1,
+      "health": 1700.0,
+      "meleeDamage": 36.0,
+      "kiDamage": 57.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    },
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_yamcha",
+      "count": 1,
+      "health": 1700.0,
+      "meleeDamage": 39.0,
+      "kiDamage": 52.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    },
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_tien_early",
+      "count": 1,
+      "health": 1900.0,
+      "meleeDamage": 45.0,
+      "kiDamage": 63.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "ATTRIBUTES",
+      "amount": 25
+    }
+  ],
+  "defaultsVersion": "2.2.0"
+}

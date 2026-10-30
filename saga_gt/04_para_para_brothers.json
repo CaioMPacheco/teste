@@ -1,0 +1,69 @@
+{
+  "id": 4,
+  "title": "dmz.quest.gt4.name",
+  "description": "dmz.quest.gt4.desc",
+  "type": "SAGA",
+  "category": "saga_gt",
+  "parallel_objectives": false,
+  "party_scaling": true,
+  "secret": false,
+  "claim_mode": "TREE_OR_NPC",
+  "prerequisites": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "gt_saga",
+        "questId": 3
+      }
+    ]
+  },
+  "requirements": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "DIMENSION",
+        "dimension": "dragonminez:namek"
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_bon_para",
+      "count": 1,
+      "health": 384500.0,
+      "meleeDamage": 14100.0,
+      "kiDamage": 12750.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    },
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_don_para",
+      "count": 1,
+      "health": 384500.0,
+      "meleeDamage": 14100.0,
+      "kiDamage": 12750.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    },
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_son_para",
+      "count": 1,
+      "health": 384500.0,
+      "meleeDamage": 14100.0,
+      "kiDamage": 12750.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "ATTRIBUTES",
+      "amount": 150
+    }
+  ],
+  "defaultsVersion": "2.2.0"
+}

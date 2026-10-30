@@ -1,0 +1,9 @@
+{
+  "id": "classic_saga",
+  "name": "dmz.saga.classic_saga",
+  "requirements": {
+    "previousSaga": ""
+  },
+  "questFolder": "saga_classic",
+  "defaultsVersion": "2.2.0"
+}

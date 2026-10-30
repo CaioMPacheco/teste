@@ -1,0 +1,9 @@
+{
+  "id": "gt_saga",
+  "name": "dmz.saga.gt_saga",
+  "requirements": {
+    "previousSaga": "buu_saga"
+  },
+  "questFolder": "saga_gt",
+  "defaultsVersion": "2.2.0"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "daima_saga",
+  "name": "dmz.saga.daima_saga",
+  "requirements": {
+    "previousSaga": "buu_saga"
+  },
+  "questFolder": "saga_daima",
+  "defaultsVersion": "2.2.0"
+}

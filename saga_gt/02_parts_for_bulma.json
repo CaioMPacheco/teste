@@ -1,0 +1,68 @@
+{
+  "id": 2,
+  "title": "dmz.quest.gt2.name",
+  "description": "dmz.quest.gt2.desc",
+  "type": "SAGA",
+  "category": "saga_gt",
+  "parallel_objectives": false,
+  "party_scaling": true,
+  "secret": false,
+  "claim_mode": "TREE_OR_NPC",
+  "prerequisites": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "gt_saga",
+        "questId": 1
+      }
+    ]
+  },
+  "requirements": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "DIMENSION",
+        "dimension": "minecraft:overworld"
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "type": "DELIVER",
+      "item": "dragonminez:radar_piece",
+      "count": 4,
+      "npcId": "bulma"
+    },
+    {
+      "type": "DELIVER",
+      "item": "minecraft:redstone_block",
+      "count": 8,
+      "npcId": "bulma"
+    },
+    {
+      "type": "DELIVER",
+      "item": "minecraft:iron_block",
+      "count": 8,
+      "npcId": "bulma"
+    },
+    {
+      "type": "DELIVER",
+      "item": "dragonminez:saiyan_ship",
+      "count": 1,
+      "npcId": "bulma"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "ATTRIBUTES",
+      "amount": 55
+    },
+    {
+      "type": "ITEM",
+      "item": "dragonminez:dball_radar",
+      "count": 1
+    }
+  ],
+  "defaultsVersion": "2.2.0"
+}

@@ -1,0 +1,49 @@
+{
+  "id": 13,
+  "title": "dmz.quest.saiyan13.name",
+  "description": "dmz.quest.saiyan13.desc",
+  "type": "SAGA",
+  "category": "saga_saiyan",
+  "parallel_objectives": false,
+  "party_scaling": true,
+  "secret": false,
+  "claim_mode": "TREE_OR_NPC",
+  "prerequisites": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "saiyan_saga",
+        "questId": 12
+      }
+    ]
+  },
+  "requirements": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "DIMENSION",
+        "dimension": "minecraft:overworld"
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "type": "STRUCTURE",
+      "structure": "dragonminez:roshi_house"
+    },
+    {
+      "type": "DELIVER",
+      "item": "minecraft:golden_carrot",
+      "count": 12,
+      "npcId": "krillin"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "ATTRIBUTES",
+      "amount": 3
+    }
+  ],
+  "defaultsVersion": "2.2.0"
+}

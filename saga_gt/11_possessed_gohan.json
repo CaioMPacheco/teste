@@ -1,0 +1,53 @@
+{
+  "id": 11,
+  "title": "dmz.quest.gt11.name",
+  "description": "dmz.quest.gt11.desc",
+  "type": "SAGA",
+  "category": "saga_gt",
+  "parallel_objectives": false,
+  "party_scaling": true,
+  "secret": false,
+  "claim_mode": "TREE_OR_NPC",
+  "prerequisites": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "gt_saga",
+        "questId": 10
+      }
+    ]
+  },
+  "requirements": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "DIMENSION",
+        "dimension": "minecraft:overworld"
+      },
+      {
+        "type": "BIOME",
+        "biome": "#dragonminez:is_plains"
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_gohan_gt_baby",
+      "count": 1,
+      "health": 998000.0,
+      "meleeDamage": 41930.0,
+      "kiDamage": 37950.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "ATTRIBUTES",
+      "amount": 160
+    }
+  ],
+  "defaultsVersion": "2.2.0"
+}

@@ -1,0 +1,61 @@
+{
+  "id": 14,
+  "title": "dmz.quest.saiyan14.name",
+  "description": "dmz.quest.saiyan14.desc",
+  "type": "SAGA",
+  "category": "saga_saiyan",
+  "parallel_objectives": false,
+  "party_scaling": true,
+  "secret": false,
+  "claim_mode": "TREE_OR_NPC",
+  "prerequisites": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "saiyan_saga",
+        "questId": 13
+      }
+    ]
+  },
+  "requirements": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "DIMENSION",
+        "dimension": "minecraft:overworld"
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "type": "STRUCTURE",
+      "structure": "dragonminez:vegeta_pod"
+    },
+    {
+      "type": "DELIVER",
+      "item": "minecraft:iron_block",
+      "count": 8,
+      "npcId": "bulma"
+    },
+    {
+      "type": "DELIVER",
+      "item": "minecraft:redstone_block",
+      "count": 4,
+      "npcId": "bulma"
+    },
+    {
+      "type": "DELIVER",
+      "item": "minecraft:diamond",
+      "count": 4,
+      "npcId": "bulma"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "ATTRIBUTES",
+      "amount": 13
+    }
+  ],
+  "defaultsVersion": "2.2.0"
+}

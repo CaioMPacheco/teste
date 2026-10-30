@@ -1,0 +1,68 @@
+{
+  "id": 39,
+  "title": "dmz.quest.movies39.name",
+  "description": "dmz.quest.movies39.desc",
+  "type": "SAGA",
+  "category": "saga_movies",
+  "parallel_objectives": false,
+  "party_scaling": true,
+  "secret": false,
+  "claim_mode": "TREE_OR_NPC",
+  "prerequisites": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "movies_saga",
+        "questId": 38
+      }
+    ]
+  },
+  "requirements": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "DIMENSION",
+        "dimension": "minecraft:overworld"
+      },
+      {
+        "type": "BIOME",
+        "biome": "#dragonminez:is_plains"
+      },
+      {
+        "operator": "OR",
+        "conditions": [
+          {
+            "type": "SAGA_QUEST",
+            "sagaId": "gt_saga",
+            "questId": 30
+          },
+          {
+            "type": "SAGA_QUEST",
+            "sagaId": "daima_saga",
+            "questId": 11
+          }
+        ]
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_hirudegarn",
+      "count": 1,
+      "health": 2341000.0,
+      "meleeDamage": 98400.0,
+      "kiDamage": 88800.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "ATTRIBUTES",
+      "amount": 210
+    }
+  ],
+  "defaultsVersion": "2.2.0"
+}

@@ -1,0 +1,58 @@
+{
+  "id": 3,
+  "title": "dmz.quest.saiyan3.name",
+  "description": "dmz.quest.saiyan3.desc",
+  "type": "SAGA",
+  "category": "saga_saiyan",
+  "parallel_objectives": false,
+  "party_scaling": true,
+  "secret": false,
+  "claim_mode": "TREE_OR_NPC",
+  "prerequisites": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "saiyan_saga",
+        "questId": 2
+      }
+    ]
+  },
+  "requirements": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "DIMENSION",
+        "dimension": "minecraft:overworld"
+      },
+      {
+        "type": "BIOME",
+        "biome": "#dragonminez:is_plains"
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "type": "KILL",
+      "entity": "dragonminez:dino1",
+      "count": 1,
+      "health": 2200.0,
+      "meleeDamage": 40.0,
+      "kiDamage": 0.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "ATTRIBUTES",
+      "amount": 20
+    },
+    {
+      "type": "ITEM",
+      "item": "dragonminez:cooked_dino_meat",
+      "count": 8
+    }
+  ],
+  "defaultsVersion": "2.2.0"
+}

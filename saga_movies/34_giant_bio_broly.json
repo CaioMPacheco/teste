@@ -1,0 +1,63 @@
+{
+  "id": 34,
+  "title": "dmz.quest.movies34.name",
+  "description": "dmz.quest.movies34.desc",
+  "type": "SAGA",
+  "category": "saga_movies",
+  "parallel_objectives": false,
+  "party_scaling": true,
+  "secret": false,
+  "claim_mode": "TREE_OR_NPC",
+  "prerequisites": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "movies_saga",
+        "questId": 33
+      }
+    ]
+  },
+  "requirements": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "DIMENSION",
+        "dimension": "minecraft:overworld"
+      },
+      {
+        "type": "BIOME",
+        "biome": "minecraft:swamp"
+      },
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "buu_saga",
+        "questId": 35
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_bio_broly_giant",
+      "count": 1,
+      "health": 1108800.0,
+      "meleeDamage": 46660.0,
+      "kiDamage": 42110.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "ATTRIBUTES",
+      "amount": 160
+    },
+    {
+      "type": "SKILL",
+      "skill": "legendaryforms",
+      "level": 2
+    }
+  ],
+  "defaultsVersion": "2.2.0"
+}

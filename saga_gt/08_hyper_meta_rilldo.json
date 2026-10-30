@@ -1,0 +1,49 @@
+{
+  "id": 8,
+  "title": "dmz.quest.gt8.name",
+  "description": "dmz.quest.gt8.desc",
+  "type": "SAGA",
+  "category": "saga_gt",
+  "parallel_objectives": false,
+  "party_scaling": true,
+  "secret": false,
+  "claim_mode": "TREE_OR_NPC",
+  "prerequisites": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "gt_saga",
+        "questId": 7
+      }
+    ]
+  },
+  "requirements": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "DIMENSION",
+        "dimension": "dragonminez:namek"
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_hyper_rilldo",
+      "count": 1,
+      "health": 1135500.0,
+      "meleeDamage": 47720.0,
+      "kiDamage": 43180.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "ATTRIBUTES",
+      "amount": 170
+    }
+  ],
+  "defaultsVersion": "2.2.0"
+}

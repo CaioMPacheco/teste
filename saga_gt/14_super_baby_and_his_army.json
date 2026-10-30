@@ -1,0 +1,86 @@
+{
+  "id": 14,
+  "title": "dmz.quest.gt14.name",
+  "description": "dmz.quest.gt14.desc",
+  "type": "SAGA",
+  "category": "saga_gt",
+  "parallel_objectives": false,
+  "party_scaling": true,
+  "secret": false,
+  "claim_mode": "TREE_OR_NPC",
+  "prerequisites": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "gt_saga",
+        "questId": 13
+      }
+    ]
+  },
+  "requirements": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "DIMENSION",
+        "dimension": "minecraft:overworld"
+      },
+      {
+        "type": "BIOME",
+        "biome": "dragonminez:rocky"
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_baby_vegeta",
+      "count": 1,
+      "health": 487000.0,
+      "meleeDamage": 40920.0,
+      "kiDamage": 37030.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY",
+      "TransformHealth": 730500.0,
+      "TransformMeleeDamage": 47060.0,
+      "TransformKiDamage": 42580.0
+    },
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_gohan_gt_baby",
+      "count": 1,
+      "health": 433000.0,
+      "meleeDamage": 4600.0,
+      "kiDamage": 4100.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    },
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_goten_gt_baby",
+      "count": 1,
+      "health": 433000.0,
+      "meleeDamage": 4600.0,
+      "kiDamage": 4100.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    },
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_trunks_gt_baby",
+      "count": 1,
+      "health": 433000.0,
+      "meleeDamage": 4600.0,
+      "kiDamage": 4100.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "ATTRIBUTES",
+      "amount": 190
+    }
+  ],
+  "defaultsVersion": "2.2.0"
+}

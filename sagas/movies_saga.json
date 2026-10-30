@@ -1,0 +1,9 @@
+{
+  "id": "movies_saga",
+  "name": "dmz.saga.movies_saga",
+  "requirements": {
+    "previousSaga": ""
+  },
+  "questFolder": "saga_movies",
+  "defaultsVersion": "2.2.0"
+}

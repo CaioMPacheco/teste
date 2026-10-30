@@ -1,0 +1,74 @@
+{
+  "id": 31,
+  "title": "dmz.quest.movies31.name",
+  "description": "dmz.quest.movies31.desc",
+  "type": "SAGA",
+  "category": "saga_movies",
+  "parallel_objectives": false,
+  "party_scaling": true,
+  "secret": false,
+  "claim_mode": "TREE_OR_NPC",
+  "prerequisites": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "movies_saga",
+        "questId": 30
+      }
+    ]
+  },
+  "requirements": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "type": "DIMENSION",
+        "dimension": "minecraft:overworld"
+      },
+      {
+        "type": "BIOME",
+        "biome": "minecraft:snowy_plains"
+      },
+      {
+        "type": "SAGA_QUEST",
+        "sagaId": "buu_saga",
+        "questId": 22
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_goten",
+      "count": 1,
+      "health": 126000.0,
+      "meleeDamage": 10370.0,
+      "kiDamage": 9550.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY",
+      "TransformHealth": 189000.0,
+      "TransformMeleeDamage": 11930.0,
+      "TransformKiDamage": 10980.0
+    },
+    {
+      "type": "KILL",
+      "entity": "dragonminez:saga_kid_trunks",
+      "count": 1,
+      "health": 136080.0,
+      "meleeDamage": 11230.0,
+      "kiDamage": 10280.0,
+      "spawn": "QUEST",
+      "count_mode": "QUEST_SPAWNED_ONLY",
+      "TransformHealth": 204120.0,
+      "TransformMeleeDamage": 12920.0,
+      "TransformKiDamage": 11830.0
+    }
+  ],
+  "rewards": [
+    {
+      "type": "ATTRIBUTES",
+      "amount": 140
+    }
+  ],
+  "defaultsVersion": "2.2.0"
+}

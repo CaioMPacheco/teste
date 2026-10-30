@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="dmzlegends"
+version="0.3.0"
+displayName="DragonMineZ Legends"
+authors="DMZ Legends"
+description='''Chefes e batalhas especiais para DragonMine Z.'''
+
+[[dependencies.dmzlegends]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.10,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.dmzlegends]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.dmzlegends]]
+modId="dragonminez"
+mandatory=false
+versionRange="[2.2,)"
+ordering="AFTER"
+side="BOTH"
